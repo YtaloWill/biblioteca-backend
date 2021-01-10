@@ -19,11 +19,11 @@ export class ObrasController {
 
   @Put(':id')
   update(@Param('id') id: string, @Body() updateObraDto: UpdateObraDto) {
-    return this.obrasService.update(+id, updateObraDto);
+    return this.obrasService.update(id, updateObraDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.obrasService.remove(+id);
+    return this.obrasService.remove(id);
   }
 }

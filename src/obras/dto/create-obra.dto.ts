@@ -1,6 +1,6 @@
 export class CreateObraDto {
     id: Number;
-    nome: String;
+    titulo: String;
     editora: String;
     foto: String;
     autores: String[];
